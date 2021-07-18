@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentacion PNL</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav id="navbar" onclick="accion()">
+        <header>Documentación de Python </header>
+        <ul>
+          <li><a class="nav-link" href="#introduccion">Introducción</a></li>
+          <li>
+            <a class="nav-link" href="#interprete">Usando el intérprete de Python</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#calculadora">Usando Python como una calculadora</a>
+          </li>
+          <li><a class="nav-link" href="#cadenas">Cadenas de caracteres</a></li>
+          <li><a class="nav-link" href="#listas">Listas</a></li>
+          <li>
+            <a class="nav-link" href="#pasos">rimeros pasos hacia la programación</a>
+          </li>
+          <li><a class="nav-link" href="#referencia">Referencia</a></li>
+          
+        </ul>
+      </nav>
+   
+      <main id="main-doc">
+        <section class="main-section" id="introduccion">
+          <header>Introducción</header>
+          <article>
+            <p>
+                Python es un lenguaje de programación potente y fácil de aprender. Tiene estructuras de datos de alto nivel eficientes y un
+      simple pero efectivo sistema de programación orientado a objetos. La elegante sintaxis de Python y su tipado dinámico,
+      junto a su naturaleza interpretada lo convierten en un lenguaje ideal para scripting y desarrollo rápido de aplicaciones en
+      muchas áreas, para la mayoría de plataformas.
+      El intérprete de Python y la extensiva librería estándar se encuentran disponibles libremente en código fuente y forma
+      binaria para la mayoría de plataformas desde la Web de Python, https://www.python.org/, y se pueden distribuir libremente. El mismo sitio contiene distribuciones y direcciones a muchos módulos de Python de terceras partes, programas,
+      herramientas y adicionalmente documentación.
+      El intérprete de Python es fácilmente extensible con funciones y tipos de datos implementados en C o C++ (o otros
+      lenguajes que permitan ser llamados desde C). Python también es apropiado como un lenguaje para extender aplicaciones
+      modificables  .
+            </p>
+      
+          </article>
+        </section>
+        <section class="main-section" id="interprete">
+          <header>Usando el intérprete de Python</header>
+          <article>
+            <p>
+            El intérprete funciona de manera similar al shell de Unix: cuando se le llama con una entrada estándar conectada a un
+            terminal, lee y ejecuta comandos de manera interactiva; cuando se le llama con un argumento de nombre de archivo o
+            con un archivo como entrada estándar, lee y ejecuta un script desde ese archivo.
+            Una segunda forma de iniciar el intérprete es python -c comando [arg] ..., que ejecuta las sentencias en
+            comando, similar a la opción de shell -c . Como las sentencias de Python a menudo contienen espacios u otros caracteres
+            que son especiales para el shell, generalmente se recomienda citar comando con comillas simples.
+            1 En Unix, el intérprete de Python 3.x no está instalado por defecto con el ejecutable llamado python, por lo que no entra en conflicto con un
+            ejecutable de Python 2.x instalado simultáneamente.
+            5
+            Documentación de Python en Español, Versión 3.8.3rc1
+            Algunos módulos de Python también son útiles como scripts. Estos pueden invocarse utilizando python -m module
+            [arg] ..., que ejecuta el archivo fuente para module como si se hubiera escrito el nombre completo en la línea de
+            comandos.
+            Cuando se usa un script, a veces es útil poder ejecutar el script y luego ingresar al modo interactivo. Esto se puede hacer
+            pasando la -i antes del nombre del script.
+            Todas las opciones de la línea de comandos se describen en using-on-general</p>
+          </article>
+        </section>
+        <section class="main-section" id="calculadora">
+          <header>Usando Python como una calculadora
+        </header>
+          <article>
+            <p>
+                Probemos algunos comandos simples de Python. Inicia el intérprete y espere el prompt primario, >>>. (No debería tardar
+                mucho).
+            </p>
+      
+            <code>>>> 2 + 2 <br>
+                4 <br>
+                >>> 50 - 5*6 <br>
+                20<br>
+                >>> (50 - 5*6) / 4 
+
+                <br>
+                5.0 <br>
+                >>> 8 / 5 # division always returns a floating point number <br>
+                1.6
+              </code>
+          </article>
+        </section>
+        <section class="main-section" id="cadenas">
+          <header>Cadenas de caracteres</header>
+          <article>
+            Además de números, Python puede manipular cadenas de texto, las cuales pueden ser expresadas de distintas formas.
+Pueden estar encerradas en comillas simples ('...') o dobles ("...") con el mismo resultado2
+. \ puede ser usado
+para escapar comillas:
+                '"Yes," they said.'<br>
+                <code>>>> 'spam eggs' # single quotes <br>
+                'spam eggs'<br>
+                >>> 'doesn\'t' # use \' to escape the single quote... <br>
+                "doesn't"<br>
+                >>> "doesn't" # ...or use double quotes instead <br>
+                "doesn't"<br>
+                >>> '"Yes," they said.' <br>
+                '"Yes," they said.'<br>
+                >>> "\"Yes,\" they said." <br>
+                '"Yes," they said.'<br>
+                >>> '"Isn\'t," they said.' <br>
+                '"Isn\'t," they said.'
+                
+            </code>
+      
+           
+          </article>
+        </section>
+        <section class="main-section" id="listas">
+          <header>Listas</header>
+          <p>
+            Python tiene varios tipos de datos compuestos, utilizados para agrupar otros valores. El más versátil es la lista, la cual
+puede ser escrita como una lista de valores separados por coma (ítems) entre corchetes. Las listas pueden contener ítems
+de diferentes tipos, pero usualmente los ítems son del mismo tipo.
+          </p>
+
+          <code><br>
+            >>> squares = [1, 4, 9, 16, 25]<br>
+            >>> squares<br>
+            [1, 4, 9, 16, 25]<br>
+          </code>
+          
+        </section>
+        <section class="main-section" id="pasos">
+          <header>Primeros pasos hacia la programación
+        </header>
+          <article>
+            Por supuesto, podemos usar Python para tareas más complicadas que sumar dos y dos. Por ejemplo, podemos escribir
+            una parte inicial de la serie de Fibonacci <https://en.wikipedia.org/wiki/Fibonacci_number>‘_ así:
+            <br>
+        <code>    >>> # Fibonacci series:<br>
+... # the sum of two elements defines the next<br>
+... a, b = 0, 1<br>
+>>> while a < 10:<br>
+... print(a)<br>
+... a, b = b, a+b<br>
+...<br>
+0<br>
+1<br>
+1<br>
+2<br>
+3<br>
+5<br>
+8<br>
+</code>
+          </article>
+        </section>
+        <section class="main-section" id="referencia">
+            <header>Referencia</header>
+            <article>
+              <p>
+                  La documentacion de esta pagina fue tomada de:
+                  <a href="https://python-docs-es.readthedocs.io/_/downloads/es/pdf/pdf/" target="_blank">doc python</a>
+                </p>
+            </article>
+          </section>
+      </main>
+    
+
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js">
+        function accion(){
+            var ancla =document.getElementsByClassName('');
+            for(var i=0; i < enlace.length; i++)
+            ancla[i].classList.toggle('desaparece');
+        }
+    </script>
+</body>
+</html>

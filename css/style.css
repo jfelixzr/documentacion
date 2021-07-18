@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+@font-face {
+  font-family: "Inconsolata";
+  src: url(../fonts/inconsolata.ttf);
+}
+
+
+body {
+  
+  font-family: "Inconsolata";
+}
+header {
+    color: black;
+    margin: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+}
+nav {
+    display: block;
+}#navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 60%;
+    
+    border-color: rgba(0, 22, 22, 0.4);
+}
+#navbar a {
+    display: block;
+    padding: 10px 30px;
+    color: #4d4e53;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#navbar li {
+    color: #4d4e53;
+    
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 330px;
+    padding: 20px;
+    margin-bottom: 130px;
+}
+
+
+
+code {
+    display: block;
+    background-color: #222229;
+    text-align: left;
+    position: relative;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 3px;
+    line-height: 3;   
+    color: blue;
+}
+#navbar a:hover{
+    background-color: rgb(187, 233, 240);
+}
+#navbar a:active{
+    background-color: rgb(44, 152, 168);
+
+}
+
+@media screen and (max-width:700px) {
+    header ,nav{
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    #main-doc{
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+        margin-top: 100px;
+        width: 100%;
+        text-align: left;
+        position: absolute;
+        transform: translateX(-300px)
+}
+ #navbar{
+    position: relative;
+ }
+}
